@@ -1,0 +1,15 @@
+li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  li a:hover {
+    text-decoration: none;
+    color: #528760;
+  }
+  
+  li a:active {
+    text-decoration: none;
+    color: #528760;
+  }
+  

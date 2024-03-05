@@ -1,0 +1,262 @@
+* {
+  margin: 0%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  li a:hover {
+    text-decoration: none;
+    color: #528760;
+  }
+  
+  li a:active {
+    text-decoration: none;
+    color: #528760;
+  }
+  
+header {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(88, 145, 103);
+  color: white;
+  justify-content: center;
+}
+
+.top-nav-p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.top-nav-left {
+  width: 45%;
+  display: flex;
+}
+
+.top-nav-left-child {
+  display: flex;
+  padding-left: 25%;
+  align-items: center;
+  letter-spacing: 0.4px;
+}
+
+.top-nav-right {
+  width: 45%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-nav-right-child {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .top-nav-left-child {
+    width: 100%;
+    padding-left: 15%;
+  }
+  .top-nav-p {
+    padding-left: 5px;
+  }
+  .top-nav-right-child {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 6vh;
+  }
+  .top-nav-left-child {
+    width: 100%;
+    padding-left: 5%;
+  }
+  .top-nav-right-child {
+    margin-right: -10%;
+  }
+  .nav-right-side-slider {
+    display: none;
+  }
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  justify-content: center;
+  background-color: white;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.nav-left-side {
+  width: 20%;
+  height: 40px;
+}
+
+.nav-left-side p {
+  font-weight: 700;
+  margin-left: 40px;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.nav-right-side {
+  width: 70%;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-right-side ul {
+  display: flex;
+}
+
+.nav-right-side ul li {
+  list-style: none;
+  margin-top: 7px;
+  display: flex;
+  margin-left: 13%;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.nav-right-side-sliders {
+  float: right;
+  margin-right: 10%;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  display: none;
+}
+@media screen and (max-width: 890px) {
+  .nav-right-side-sliders {
+    display: block;
+  }
+}
+
+.nav-right-side ul li:hover {
+  color: rgb(88, 145, 103);
+  cursor: pointer;
+}
+
+.nav-right-side ul li:active {
+  color: rgb(88, 145, 103);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-right-side {
+    padding-right: 20%;
+  }
+  .nav-right-side ul li {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .nav-right-side {
+    display: none;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+  }
+
+  header {
+    height: 9vh;
+    flex-direction: column;
+  }
+  .top-nav-left {
+    width: 100%;
+  }
+  .top-nav-left-child {
+    margin-bottom: 8px;
+  }
+  .top-nav-right-child {
+    width: 100%;
+    justify-content: center;
+  }
+  .top-nav-right-child i {
+    width: 30px;
+  }
+  .top-nav-right {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .top-nav-left {
+    width: 100%;
+  }
+  .top-nav-left-child {
+    margin-left: -50px;
+  }
+}
+
+@media screen and (max-width: 1190px) and (min-width: 1024px) {
+  .nav-right-side {
+    padding-right: 300px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1191px) {
+  .nav-right-side {
+    padding-right: 300px;
+  }
+}
+
+/* hero-section-start  */
+
+.hero-section-container {
+  background-image: url(./images/about-page/hero-section.webp);
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  width: auto;
+  position: relative;
+  height: 400px;
+}
+
+.hero-section-container .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  opacity: 1;
+  background: -webkit-linear-gradient(
+    45deg,
+    #589167 0%,
+    rgba(88, 145, 103, 0) 100%
+  );
+}
+
+.hero-section-content {
+  position: relative;
+}
